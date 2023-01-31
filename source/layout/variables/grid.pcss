@@ -1,0 +1,26 @@
+$screen-xs: 576px;
+$screen-sm: 768px;
+$screen-md: 1200px;
+
+:root {
+    --breakpoints:
+        (
+            xs: $screen-xs,
+            sm: $screen-sm,
+            md: $screen-md
+        );
+
+    /* Gutter width */
+    --gutter-width: 30px;
+
+    /* Container max width */
+    --container-max-width: calc(1170px + var(--gutter-width));
+}
+
+@each $key, $value in var(--breakpoints) {
+    @custom-media --below-screen-$(key) (width < $value);
+    @custom-media --above-screen-$(key) (width >= $value);
+}
+
+@custom-media --xs-to-sm ($screen-xs <= width < $screen-sm);
+@custom-media --sm-to-md ($screen-sm <= width < $screen-md);

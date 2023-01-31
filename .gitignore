@@ -1,0 +1,13 @@
+node_modules/*
+
+*.sublime-project
+*.sublime-workspace
+.idea
+
+*.swp
+*~
+*.iws
+*.log
+.project
+.DS_Store
+!.gitignore

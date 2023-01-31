@@ -1,0 +1,17 @@
+@define-mixin media-breakpoint-down $key {
+    @media (--below-screen-$(key)) {
+        @mixin-content;
+    }
+}
+
+@define-mixin media-breakpoint-up $key {
+    @media (--above-screen-$(key)) {
+        @mixin-content;
+    }
+}
+
+@define-mixin media-breakpoint-between $keyUp, $keyDown {
+    @media (--above-screen-$(keyUp)) and (--below-screen-$(keyDown)) {
+        @mixin-content;
+    }
+}
