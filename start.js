@@ -14,8 +14,6 @@ const environment =
 const task =
   typeof process.argv[2] !== 'undefined' ? process.argv[2].toString() : '';
 
-console.log(`${set} NODE_ENV=${environment} && gulp ${task}`);
-
 const command = exec(`${set} NODE_ENV=${environment} && gulp ${task}`);
 
 command.stdout.on('data', (data) => {
