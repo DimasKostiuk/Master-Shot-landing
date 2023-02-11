@@ -1,18 +1,18 @@
 .header {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-    &__container {
-        @extend .container;
-    }
+  &__container {
+    @extend .container;
+  }
 
-    &__row {
-        @extend .row;
+  &__row {
+    @extend .row;
 
-        justify-content: center;
-    }
+    justify-content: center;
+  }
 
-    &__logo {
-        @extend .col-auto;
-    }
+  &__logo {
+    @extend .col-auto;
+  }
 }

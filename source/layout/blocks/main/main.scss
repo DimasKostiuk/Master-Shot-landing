@@ -1,11 +1,11 @@
 .main {
-    flex-grow: 1;
+  flex-grow: 1;
 
-    &__row {
-        @extend .row;
-    }
+  &__row {
+    @extend .row;
+  }
 
-    &__container {
-        @extend .container;
-    }
+  &__container {
+    @extend .container;
+  }
 }

@@ -1,62 +1,62 @@
 <!DOCTYPE html>
-<html lang="uk" dir="ltr" {%- block ogHtmlAttr -%}{%- endblock -%}>
+<html lang="uk" dir="ltr" {% block ogHtmlAttr %}{% endblock %}>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {%- block browserTheme -%}
-        {%- include 'core/blocks/browser_theme.njk' %}
-    {%- endblock -%}
+  {%- block browserTheme %}
+    {%- include 'core/blocks/browser_theme.njk' %}
+  {%- endblock %}
 
-    {%- block ogTags -%}{%- endblock -%}
+  {%- block ogTags %}{% endblock %}
 
-    {%- block metatags -%}
-        {%- include 'core/blocks/metatags.njk' -%}
-    {%- endblock -%}
+  {%- block metatags %}
+    {%- include 'core/blocks/metatags.njk' %}
+  {%- endblock %}
 
-    {%- block metaRobots -%}{%- endblock -%}
+  {%- block metaRobots %}{% endblock %}
 
-    {%- include 'core/blocks/favicons.njk' -%}
+  {%- include 'core/blocks/favicons.njk' %}
 
-    {%- block fonts -%}{%- endblock -%}
+  {%- block fonts %}{% endblock %}
 
-    {%- block stylesheets -%}
-        <link rel="stylesheet" href="css/app{{- minSuffix -}}.css">
-    {%- endblock -%}
+  {%- block stylesheets -%}
+    <link rel="stylesheet" href="css/app{{ minSuffix }}.css">
+  {% endblock %}
 
-    {%- block headJavascripts -%}{%- endblock -%}
+  {%- block headJavascripts %}{% endblock -%}
 </head>
 
 <body>
-    {%- block body -%}
-        <div class="wrapper">
-            {%- block header -%}
-                {%- include 'blocks/header/header.njk' -%}
-            {%- endblock -%}
+  {%- block body %}
+    <div class="wrapper">
+      {%- block header %}
+        {% include 'blocks/header/header.njk' %}
+      {%- endblock %}
 
-            {%- block nav -%}{%- endblock -%}
-            {%- block breadcrumb -%}{%- endblock -%}
-            {%- block flashMessages -%}{%- endblock -%}
+      {%- block nav %}{% endblock %}
+      {%- block breadcrumb %}{% endblock %}
+      {%- block flashMessages %}{% endblock %}
 
-            {%- block main -%}
-                <div class="main">
-                    {%- block mainBody -%}{%- endblock -%}
-                </div>
-            {%- endblock -%}
-
-            {%- block footer -%}
-                {%- include 'blocks/footer/footer.njk' -%}
-            {%- endblock -%}
+      {%- block main %}
+        <div class="main">
+          {% block mainBody %}{% endblock %}
         </div>
-    {%- endblock -%}
+      {% endblock %}
 
-    {%- block noscripts -%}{%- endblock -%}
+      {%- block footer %}
+        {% include 'blocks/footer/footer.njk' %}
+      {%- endblock -%}
+    </div>
+  {% endblock %}
 
-    {%- block javascripts -%}
-        <script src="js/app{{- minSuffix -}}.js"></script>
-    {%- endblock -%}
+  {%- block noscripts %}{% endblock %}
+
+  {%- block javascripts %}
+    <script src="js/app{{ minSuffix }}.js"></script>
+  {%- endblock %}
 </body>
 
 </html>
