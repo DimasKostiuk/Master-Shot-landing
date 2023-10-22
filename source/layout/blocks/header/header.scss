@@ -3,16 +3,111 @@
   padding-bottom: 15px;
 
   &__container {
-    @extend .container;
+    background-color: white;
   }
 
   &__row {
-    @extend .row;
-
+    display: flex;
     justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    @include lg {
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 100px;
+    }
+    @include md {
+      padding: 0;
+      justify-content: center;
+    }
   }
 
   &__logo {
     @extend .col-auto;
+    padding: 14px 28px;
+    @include lg {
+      padding: 0;
+    }
+    @include md {
+      // margin-left: 80px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    @include sm {
+      display: none;
+    }
+    a {
+      text-decoration: none;
+      color: #6C6C6C;
+      margin-right: 30px;
+      font-weight: 500;
+      &:hover {
+        color: #454444;
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      @include lg {
+        display: none;
+      }
+    }
+
+    li {
+      list-style: none;
+      padding-right: 20px;
+      padding: 12px 24px;
+      font-size: 18px;
+
+      @include xlg{
+        padding: 12px 0;
+      }
+      @include lg {
+        font-size: 16px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #6C6C6C;
+        margin-right: 48px;
+        font-weight: 500;
+        &:hover {
+          color: #454444;
+        }
+      }
+    }
+  }
+
+  &__item {
+    margin-left: 70px;
+    @include xlg {
+      margin: 0;
+    }
+  }
+
+  &__button {
+    border: 1px solid #1C69FF;
+    border-radius: 8px;
+    background-color: white;
+    color: #1C69FF;
+    padding: 12px 24px;
+    font-weight: 500;
+    transition: .5s;
+    a{
+      color: #1C69FF;
+      margin: 0;
+    }
+    &:hover{
+      background-color:#1C69FF;
+      color: black;
+    }
   }
 }
+
+

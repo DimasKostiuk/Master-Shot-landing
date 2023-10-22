@@ -1,0 +1,80 @@
+.whom {
+
+    &__row {
+        margin-top: 200px;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__block {
+        background-color: #F3EEFF;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+        @include md {
+            flex-direction: column-reverse;
+        }
+        h3 {
+            color: #B5B5B5;
+            font-size: 54px;
+            letter-spacing: 0.2px;
+            font-weight: 700;
+            padding-bottom: 30px;
+            @include lg {
+                font-size: 40px;
+            }
+        }
+        ul{
+            padding: 0;
+            margin-bottom: 50px;
+            li {
+                @include lg {
+                    font-size: 20px;
+                }
+            } 
+        }
+    }
+
+    &__photo {
+        margin-right: 20px;
+        
+        img{
+            border-radius: 20px;
+            height: 440px;
+            margin-top: -60px;
+            @include lg {
+                height: 300px;
+            }
+            @include md {
+                height: 250px;
+                margin-top: -50px;
+            }
+        }
+    }
+
+    &__text {
+        margin-left: 120px;
+        padding: 50px 0;
+        @include xlg {
+            margin-left: 40px;
+        }
+        @include lg {
+
+        }
+    }
+
+    &__button{
+        a{
+            color: white;
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}

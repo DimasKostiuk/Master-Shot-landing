@@ -1,0 +1,97 @@
+.demo {
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        background-color: #F5F5F5;
+        @include sm {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__video {
+        width: 50%;
+    }
+
+    &__video-container {
+        background: url(../../../../../images/demo.png) center / cover no-repeat;
+        height: 600px;
+        width: 550px;
+        border-bottom-right-radius: 20px;
+
+        @include xlg {
+            width: 450px;
+            height: 500px;
+        }
+        @include lg {
+            height: 400px;
+            width: 350px;
+        }
+        @include md {
+            height: 300px;
+            width: 250px;
+        }
+    }
+    &__items {
+        margin-left: 10%;
+        padding-top: 80px;
+        @include xlg {
+            margin: 0 0 0 30px;
+        }
+        @include lg{
+            padding: 0;
+        }
+
+        &_title {
+            width: 80%;
+
+            h1 {
+                font-size: 70px;
+                text-align: left;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: #49454F;
+                @include xlg {
+                    font-size: 50px;
+                }
+                @include lg {
+                    padding: 0;
+                }
+                @include md {
+                    font-size: 40px;
+                }
+                @include sm {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        &_text {
+            font-size: 24px;
+            color: #6C6C6C;
+            @include xlg {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 72px;
+        background-color: #1C69FF;
+        border-radius: 8px;
+        border: none;
+        padding: 20px 40px;
+        color: white;
+        a{
+            color: white;
+            margin: 0;
+            &:hover{
+                color: black;
+            }
+          }
+          @include md {
+            margin: 40px 0;
+            padding: 15px 30px;
+          }
+    }
+}

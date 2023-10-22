@@ -1,0 +1,22 @@
+.footer__row {
+  background-color: #D2D2D2;
+  overflow: hidden;
+  padding: 30px 0 70px 0;
+}
+
+.footer__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__list li {
+  padding: 0 20px;
+  color: #6C6C6C;
+}

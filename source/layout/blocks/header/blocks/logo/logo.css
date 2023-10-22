@@ -1,0 +1,13 @@
+.logo {
+  color: black;
+}
+
+.logo__link {
+  display: block;
+  color: black;
+}
+
+.logo img {
+  width: 200px;
+  color: black;
+}

@@ -1,3 +1,68 @@
 html, body {
   height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  background-color: #F5F5F5;
+}
+
+li{
+  list-style: none;
+  font-size: 24px;
+  color: #49454F;
+  list-style: none;
+}
+
+button {
+  border: 1px solid #1C69FF;
+  border-radius: 8px;
+  background-color: #1C69FF;
+  color: white;
+  padding: 12px 24px;
+  font-weight: 500;
+  transition: .5s;
+  &:hover{
+    background-color:#1C69FF;
+    color: black;
+  }
+}
+a{
+  text-decoration: none;
+}
+
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$xlarge-screen: 1200px;
+$xxlarge-screen: 1400px;
+
+@mixin sm {
+  @media screen and (max-width: $small-screen) {
+      @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: $medium-screen) {
+      @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (max-width: $large-screen) {
+      @content;
+  }
+}
+
+@mixin xlg {
+  @media screen and (max-width: $xlarge-screen) {
+      @content;
+  }
+}
+
+@mixin xxl {
+  @media screen and (max-width: $xxlarge-screen) {
+      @content;
+  }
 }

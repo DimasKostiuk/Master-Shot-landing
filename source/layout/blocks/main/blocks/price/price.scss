@@ -1,0 +1,148 @@
+.price {
+    &__container{
+        h3 {
+            font-size: 54px;
+            color: #B5B5B5;
+            text-align: center;
+            margin: 100px 0;
+            @include lg {
+                margin: 20px 0;
+            }
+        }
+    }
+    
+    &__cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        @include lg {
+            flex-direction: column;
+            align-items: center;
+        }
+        &_card {
+            background-color: #FAFAFA;
+            width: 400px;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include xxl {
+                width: 350px;
+            }
+            @include xlg {
+                width: 300px;
+            }
+            @include lg {
+                width: 450px;
+                margin-bottom: 20px;
+            }
+            @include md {
+                width: 300px;
+            }
+            h2 {
+                margin-top: 30px;
+                font-size: 28px;
+                color: #49454F;
+                font-weight: 400;
+                text-align: center;
+            }
+            h2.pro {
+                color: #1C69FF;
+                font-weight: 700;
+            }
+            p{
+                margin-top: 20px;
+                font-size: 20px;
+                color: #AEAEAE;
+                text-align: center;
+                span {
+                    font-size: 52px;
+                    color: #747474;
+                }
+            }
+            p.save{
+                color: #8C9CD1;
+                margin: 0;
+                font-style: italic;
+                font-size: 16px;
+                margin-bottom: 20px;
+                margin-top: -20px;
+                &_inactive {
+                    color: #B8B8B8;
+                    margin: 0;
+                    font-style: italic;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    margin-top: -20px;
+                }
+            }
+        }
+        
+    }
+
+    &__pro {
+        color: #1C69FF;
+      
+    }
+    &__first-card{
+        ul{
+            margin-bottom: 100px;
+            :first-child {
+                color: #6C6C6C;
+            }
+            @include lg {
+                margin-bottom: 10px;
+            }
+        }
+        li{
+            color: #DDDDDD;
+            font-size: 16px;
+            padding: 10px 0;
+            margin-right: 100px;
+        }
+    }
+
+    &__button {
+        &_standart{
+            background-color: white;
+            // color: #1C69FF;
+            width: 160px;
+            margin-bottom: 40px;
+            &:hover{
+                color: white;
+                a{
+                    color: white;
+                }
+            }
+        }
+        &_blue{
+            background-color: 1C69FF;
+            color: white;
+            width: 160px;
+            margin-bottom: 40px;
+            a{
+                color: white;
+            }
+            &:hover{
+                color: black;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+
+    &__second-text {
+        li {
+            color: #6C6C6C;
+        }
+    }
+    &__third-text {
+        :nth-child(2){
+            color: #6C6C6C;
+        }
+    }
+}
