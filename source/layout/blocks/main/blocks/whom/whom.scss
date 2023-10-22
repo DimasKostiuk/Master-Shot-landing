@@ -22,12 +22,15 @@
         }
         h3 {
             color: #B5B5B5;
-            font-size: 54px;
+            font-size: 50px;
             letter-spacing: 0.2px;
             font-weight: 700;
             padding-bottom: 30px;
-            @include lg {
+            @include xlg{
                 font-size: 40px;
+            }
+            @include lg {
+                font-size: 35px;
             }
         }
         ul{

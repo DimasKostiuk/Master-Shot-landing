@@ -11276,14 +11276,19 @@ a {
 }
 .whom__block h3, .whom__block .h3 {
   color: #B5B5B5;
-  font-size: 54px;
+  font-size: 50px;
   letter-spacing: 0.2px;
   font-weight: 700;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .whom__block h3, .whom__block .h3 {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .whom__block h3, .whom__block .h3 {
+    font-size: 35px;
   }
 }
 .whom__block ul {
