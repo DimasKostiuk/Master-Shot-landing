@@ -10821,7 +10821,7 @@ a {
 }
 .header__row {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   align-items: center;
 }
