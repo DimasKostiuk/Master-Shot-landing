@@ -2,10 +2,6 @@
 
 ## Create project
 
-```bash
-git clone git@github.com:Roman-Krasinskyi/frontent-starterkit.git
-```
-
 ## Running locally
 
 - **Node 18** - can be installed through [nvm](https://github.com/nvm-sh/nvm)
